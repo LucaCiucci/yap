@@ -1,0 +1,19 @@
+[package]
+name = "yasp"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+bincode = "2.0.1"
+ebnf = "0.1.4"
+log = "0.4.27"
+prettyplease = "0.2.32"
+proc-macro2 = "1.0.95"
+quote = "1.0.40"
+regex = "1.11.1"
+serde = { version = "1.0.219", features = ["derive"] }
+syn = "2.0.101"
+
+[dev-dependencies]
+serde_yaml = "0.9.34"

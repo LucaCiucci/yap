@@ -1,0 +1,10 @@
+(* Generated from fortran_integer.yaml *)
+
+digit                       = /[0-9]/;
+digit-string                = digit+;
+int-literal-constant        = digit-string ["_" kind-param];
+kind-param                  = digit-string | scalar-int-constant-name;
+name                        = /[a-zA-Z_][a-zA-Z0-9_]*/;
+scalar-int-constant-name    = name;
+sign                        = "+" | "-";
+signed-int-literal-constant = [sign] int-literal-constant;
